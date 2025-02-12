@@ -1,0 +1,13 @@
+- name: Clone Django repository
+  hosts: app
+  become: yes
+  tasks:
+    - name: Ensure git is installed
+      apt:
+        name: git
+        state: present
+    - name: Clone repository
+      git:
+        repo: "https://github.com/mdn/django-locallibrary-tutorial.git"
+        dest: "/home/vagrant/django_app"
+

@@ -1,0 +1,8 @@
+- name: Install Docker SDK for Python
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install pip package for Docker
+      pip:
+        name: docker
+
