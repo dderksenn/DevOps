@@ -1,6 +1,5 @@
 ---
 # tasks file for roles/docker
----
 - name: Install dependencies
   apt:
     name: "{{ docker_dependencies }}"

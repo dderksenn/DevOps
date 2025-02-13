@@ -1,6 +1,5 @@
 ---
 # defaults file for roles/docker
----
 docker_dependencies:
   - apt-transport-https
   - ca-certificates
