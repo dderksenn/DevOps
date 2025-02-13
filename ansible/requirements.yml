@@ -1,0 +1,6 @@
+---
+- src: git@github.com:dderksenn/DevOps.git
+  scm: git
+  version: master
+  name: docker
+
